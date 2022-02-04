@@ -22,7 +22,7 @@ fetch(('https://striveschool-api.herokuapp.com/api/movies'), {
 .catch(err=>console.log(err))
 console.log(genres)
     
-    alert("your data has been added, lets g0000")
+    alert("the genre has been created, lets g0000")
     
 }
 
