@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="profile.css">
+    <title>Profile Page</title>
+  </head>
+  <body id="ProfileBody ">
+    <nav class="navbar navbar-expand-lg " id="NavBarProfile" >
+        <div class="container-fluid">
+          <a class="navbar-brand mr-4" href="#"> <img src="https://www.edigitalagency.com.au/wp-content/uploads/Netflix-logo-red-black-png.png" alt="Netflix Logo" height="60px" width="150px" >  </a>
+          
+          
+        </div>
+      </nav>
+    <div class="container mt-2" id="profileContainer">
+        <div class="row">
+            <h1>Edit Profile</h1>
+            <hr>
+            <div class="col-3">
+               <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT814jbuuuEYS8JJjegI4bVwtknB26HMU8c_g&usqp=CAU" alt="Strive_logo" class="img-fluid" height="200px" width="200px">
+               </div>
+          </div>
+        <div class="col-9">
+            <div class="mt-2"><h6 id="StriveStudent" class="mr-2">Strive Student</h6></div>
+            
+            <div class="dropdown">
+                <label for="languageBtn" class="mx-2 mt-2">Language</label><br>
+                <button class="dropdown-toggle mt-2 mx-2" type="button" id="languageBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                  English
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Arabic</a></li>
+                  <li><a class="dropdown-item" href="#">Swedish</a></li>
+                </ul>
+              </div>
+              <hr>
+
+              <label class="mt-4"> Maturity Settings:</label>
+              <h6 id="MaturityRatings" class="mt-2"><small>ALL MATURITY RATINGS</small></h6>
+              <p id="P_area" class="my-2 mt-2"> Show titles of all maturity ratings for this profile.</p>
+              <button class="mt-2" id="Editbtn"> Edit </button>
+              <hr class="mt-5">
+              <label class="my-2">Autoplay controls</label>
+              <div class="mt-2">
+                  <input type="checkbox" ><p id="Checkbox_P" class="mr-1">Autoplay next episode In a series on all devices.</p>
+              </div>
+              <div>
+                <input type="checkbox"><p id="Checkbox_P" class="mr-1">Autoplay Previews while browsing on all devices</p>
+            </div>
+        </div>
+        <hr>
+        <div class="col mt-2 mb-5 " id="btn_Div">
+            <button type="button" id="bottom_Btn" class="btn ">SAVE</button>
+            <button type="button" id="bottom_Btn" class="btn ">CANCEL</button>
+            <button type="button" id="bottom_Btn" class="btn ">DELETE PROFILE</button>
+        </div>
+
+
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
+</html>

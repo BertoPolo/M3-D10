@@ -1,0 +1,23 @@
+body {
+  background: rgb(20, 20, 20);
+  color: whitesmoke;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.bg-netflix {
+  background: rgb(20, 20, 20);
+  vertical-align: auto;
+}
+
+#iconsRight {
+  position: absolute;
+  right: 3%;
+}
+
+.animated :hover {
+  width: 130% !important;
+  position: absolute !important;
+  z-index: 9999 !important;
+  right: 1%;
+}
