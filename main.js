@@ -31,7 +31,7 @@ console.log(genres)
 
 const fetcher = function(){
     
-    fetch(('https://striveschool-api.herokuapp.com/api/movies'), {
+    fetch("https://striveschool-api.herokuapp.com/api/movies/" + genres, {
             headers: {
          "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWZhNmFlMDgyZWExZDAwMTViYjA0MzciLCJpYXQiOjE2NDM4MDEzMTIsImV4cCI6MTY0NTAxMDkxMn0.dlz2qOuGVhBvUctJZ6tPWRv6oLf_d1KGnXfKXwMn6Ys",
         }
