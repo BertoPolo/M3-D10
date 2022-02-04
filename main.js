@@ -35,7 +35,18 @@ const fetcher = function(){
         }
       })
       .then(resp=>resp.json())
-      .then(serverData =>console.log(serverData))
+      .then(serverData =>{
+        console.log(serverData)
+
+        serverData.forEach(element => {
+            const theP = document.createElement ("h4")
+            theP.innerHTML= ` ${element} `
+
+            const containerNode = document.getElementById("dynamic")
+            containerNode.appendChild(theP)
+        })
+        
+    })
     .catch(err=>console.log(err))
 }
 
@@ -45,3 +56,7 @@ window.onload = function(){
    
     
 }
+//hay que pillar serverData( que son las categorias ) y hacer que sea una pagina nueva 
+//y hacer append alli con cada elemento
+
+
