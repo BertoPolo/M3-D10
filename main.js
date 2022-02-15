@@ -1,4 +1,4 @@
-const handleSubmit = function (event) {
+/* const handleSubmit = function (event) {
   event.preventDefault();
 
   const genres = {
@@ -33,7 +33,7 @@ const handleSubmit = function (event) {
     console.log(data)
 } */
 
-const fetcher = function () {
+/* const fetcher = function () {
   fetch("https://striveschool-api.herokuapp.com/api/movies", {
     headers: {
       Authorization:
@@ -58,4 +58,23 @@ const fetcher = function () {
 window.onload = function () {
   fetcher();
 };
-//crear peliculas
+ */
+
+const fectcherMovies = async () => {
+  try {
+    let response = await fetch(
+      "https://striveschool-api.herokuapp.com/api/movies",
+      {
+        headers: new Headers({
+          "Content-Type": "application/json",
+          Authorization:
+            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWZhNmFlMDgyZWExZDAwMTViYjA0MzciLCJpYXQiOjE2NDM4MDEzMTIsImV4cCI6MTY0NTAxMDkxMn0.dlz2qOuGVhBvUctJZ6tPWRv6oLf_d1KGnXfKXwMn6Ys",
+        }),
+      }
+    );
+    console.log(response);
+  } catch (error) {
+    console.log(error);
+  }
+};
+fectcherMovies();
