@@ -1,13 +1,4 @@
-/* const handleSubmit = function (event) {
-  event.preventDefault();
-
-  const genres = {
-    name: document.getElementById("inputName").value,
-    description: document.getElementById("inputDescription").value,
-    category: document.getElementById("inputCategory").value,
-    imageUrl: document.getElementById("inputImgeUrl").value,
-  };
-
+/* 
   fetch("https://striveschool-api.herokuapp.com/api/movies", {
     method: "POST",
     body: JSON.stringify(genres),
@@ -60,6 +51,26 @@ window.onload = function () {
 };
  */
 
+const handleSubmit = function (event) {
+    event.preventDefault();
+  
+    const movieInput = {
+      name: document.getElementById("inputName").value,
+      description: document.getElementById("inputDescription").value,
+      category: document.getElementById("inputCategory").value,
+      imageUrl: document.getElementById("inputImgeUrl").value,
+    };
+  
+
+const genresCreator = function (genres) {
+  const dropdown = document.getElementById("genresDropdown");
+  genres.forEach(
+    (genre) =>
+      (dropdown.innerHTML += `
+    <a class="dropdown-item" href="#">${genre}</a> `)
+  );
+};
+
 const fectcherMovies = async () => {
   try {
     let response = await fetch(
@@ -73,6 +84,9 @@ const fectcherMovies = async () => {
       }
     );
     console.log(response);
+    let data = await response.json();
+    console.log(data);
+    genresCreator(data);
   } catch (error) {
     console.log(error);
   }
