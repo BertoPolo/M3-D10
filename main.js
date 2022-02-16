@@ -49,7 +49,7 @@ const handleSubmit = function (event) {
     imageUrl: document.getElementById("inputImgeUrl").value,
   };
 
-  // here put the POST
+  // put here  the POST
 
   /* fetch("https://striveschool-api.herokuapp.com/api/movies", {
     method: "POST",
@@ -62,9 +62,9 @@ const handleSubmit = function (event) {
   }).catch((err) => console.log(err));
   console.log(genres);
 
-  alert("the genre has been created, lets g0000");
+  alert("the movie has been created, lets g0000");
 }; */
-};
+
 const genresCreator = function (genres) {
   const dropdown = document.getElementById("genresDropdown");
   genres.forEach(
